@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Form Container */
+  .form-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff8c00;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ffa733;
+  }
+  
+  a {
+    color: #ffa733;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Recipe Input */
+  #ingredients {
+    width: 80%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  #result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    width: 80%;
+  }
+  
+  /* Popup Menu */
+  .menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .menu button {
+    background-color: #ff8c00;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+  
+  .popup {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .popup a {
+    margin: 8px 0;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+    .form-container, #result {
+      width: 90%;
+    }
+  
+    #ingredients {
+      width: 90%;
+    }
+  }
+  
